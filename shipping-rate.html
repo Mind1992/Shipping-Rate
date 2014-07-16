@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Shipping Rate</title>
+</head>
+<body>
+  <h1>Shipping Rate</h1>
+
+  <form id="shipping-details">
+    <p>No. of packages:</p>
+    <input type="number" placeholder="Type a number of packages" id="number-of-packages">
+    <p>Weight:</p>
+    <input type="number" placeholder="Type weight in lbs" id="weight">
+    <p>Shipment speed:</p>
+    <select name="shipment-speed" form="shipping-details" id="so">
+      <option value="free">Free shipping</option>
+      <option value="regular">Regular</option>
+      <option value="express">Express</option>
+    </select>
+    <input type="submit" value="Add">
+  </form>
+
+  <div id="results">
+    <h2>Hello</h2>
+    <ul></ul>
+  </div>
+
+</body>
+</html>
