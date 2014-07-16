@@ -15,7 +15,6 @@ var shipping = {
 		else if (this.speed === "express") {
 			speedCost += 30;
 		}
-
 		var totalCost = baseCost + numberCost + weightCost + speedCost;
 		return totalCost;
 	}
@@ -28,11 +27,11 @@ $(document).ready(function() {
 		event.preventDefault();
 		shipping.number = parseInt($("#number-of-packages").val());
 		shipping.weight = parseInt($("#weight").val());
-		shipping.speed = $("#speed").val(); //string
-		// console.log(shipping.rate());
+		shipping.speed = $("#speed").val();
 
+	$("div#results").text(shipping.rate());
 	});
+
 });
 
 
-//totalCost.toPrecision(2);
